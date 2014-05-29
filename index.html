@@ -24,7 +24,11 @@
             model: Student
          });
 
-         var collection = new ClassRoom();
+         var student1 = new Student({name: "Galen", age: "23"});
+         var student2 = new Student({name: "Cameron", age: "29"});
+         var student3 = new Student({name: "Andrew", age: "25"});
+
+         var collection = new ClassRoom([student1, student2, student3]);
 	    
     </script>
 
