@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Backbone Collections</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="underscore.js" type="text/javascript"></script>
+	<script src="backbone.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+        
+         Student = Backbone.Model.extend({
+            defaults:{
+                name: "",
+                age: ""
+            }
+         });
+
+         ClassRoom = Backbone.Collection.extend({
+            model: Student
+         });
+
+         var collection = new ClassRoom();
+	    
+    </script>
+
+</body>
+</html>
